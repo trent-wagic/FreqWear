@@ -1,0 +1,32 @@
+.easyPieChart {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.easyPieChart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pie-contract-completed {
+    position: relative;
+    text-align: center;
+}
+
+.pie-revenue-target {
+    position: relative;
+    text-align: center;
+}
+
+.pie-target {
+    position: relative;
+    text-align: center;
+}
+
+.pie-sales-canvas {
+    position: relative;
+    text-align: center;
+}

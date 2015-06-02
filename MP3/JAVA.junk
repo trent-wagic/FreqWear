@@ -1,0 +1,128 @@
+/*                if(prev_led_st == led_state && prev_mtr_st == motor_state && prev_mag_st == magnet_state)
+                {
+                   ctr++;
+                   CURRENT = (byte)( CURRENT + 0x1000 ); 
+                }
+                else
+                {
+                   //System.out.println("ctr: " + ctr);
+                   sum = sum + ctr;
+                   ctr = 0;
+                   byteString = byteString + (char)CURRENT;
+                   CURRENT = (byte)0x1000;
+                }
+
+                prev_led_st = led_state;
+                prev_mtr_st = motor_state;
+                prev_mag_st = magnet_state;
+*/
+
+                /////////////////////////LED STATE/////////////////////////////
+/*                if     (num[1] == 0)                     { led_state =  0; LED = (byte)0x0000; }
+                else if(num[1] >    0 && num[1] <=  100) { led_state =  1; LED = (byte)0x0001; }
+                else if(num[1] >  100 && num[1] <=  200) { led_state =  2; LED = (byte)0x0002; }
+                else if(num[1] >  200 && num[1] <=  300) { led_state =  3; LED = (byte)0x0003; }
+                else if(num[1] >  300 && num[1] <=  400) { led_state =  4; LED = (byte)0x0004; }
+                else if(num[1] >  400 && num[1] <=  500) { led_state =  5; LED = (byte)0x0005; }
+                else if(num[1] >  500 && num[1] <=  600) { led_state =  6; LED = (byte)0x0006; }
+                else if(num[1] >  600 && num[1] <=  700) { led_state =  7; LED = (byte)0x0007; }
+                else if(num[1] >  700 && num[1] <=  800) { led_state =  8; LED = (byte)0x0008; }
+                else if(num[1] >  800 && num[1] <=  900) { led_state =  9; LED = (byte)0x0009; }
+                else if(num[1] >  900 && num[1] <= 1000) { led_state = 10; LED = (byte)0x000A; }
+                else if(num[1] > 1000 && num[1] <= 1100) { led_state = 11; LED = (byte)0x000B; }
+                else if(num[1] > 1100 && num[1] <= 1200) { led_state = 12; LED = (byte)0x000C; }
+                else if(num[1] > 1200 && num[1] <= 1300) { led_state = 13; LED = (byte)0x000D; }
+                else if(num[1] > 1300 && num[1] <= 1400) { led_state = 14; LED = (byte)0x000E; }
+                else                                     { led_state = 15; LED = (byte)0x000F; }*/
+                /////////////////////////////////////////////////////////////// 
+
+                /////////////////////////MOTOR STATE///////////////////////////
+                /*if     (num[1] == 0)                     { motor_state =  0; MOTOR_SPEED = (byte)0x0000; }
+                else if(num[1] >    0 && num[1] <=  100) { motor_state =  1; MOTOR_SPEED = (byte)0x0010; }
+                else if(num[1] >  100 && num[1] <=  200) { motor_state =  2; MOTOR_SPEED = (byte)0x0020; }
+                else if(num[1] >  200 && num[1] <=  300) { motor_state =  3; MOTOR_SPEED = (byte)0x0030; }
+                else if(num[1] >  300 && num[1] <=  400) { motor_state =  4; MOTOR_SPEED = (byte)0x0040; }
+                else if(num[1] >  400 && num[1] <=  500) { motor_state =  5; MOTOR_SPEED = (byte)0x0050; }
+                else if(num[1] >  500 && num[1] <=  600) { motor_state =  6; MOTOR_SPEED = (byte)0x0060; }
+                else if(num[1] >  600 && num[1] <=  700) { motor_state =  7; MOTOR_SPEED = (byte)0x0070; }
+                else if(num[1] >  700 && num[1] <=  800) { motor_state =  8; MOTOR_SPEED = (byte)0x0080; }
+                else if(num[1] >  800 && num[1] <=  900) { motor_state =  9; MOTOR_SPEED = (byte)0x0090; }
+                else if(num[1] >  900 && num[1] <= 1000) { motor_state = 10; MOTOR_SPEED = (byte)0x00A0; }
+                else if(num[1] > 1000 && num[1] <= 1100) { motor_state = 11; MOTOR_SPEED = (byte)0x00B0; }
+                else if(num[1] > 1100 && num[1] <= 1200) { motor_state = 12; MOTOR_SPEED = (byte)0x00C0; }
+                else if(num[1] > 1200 && num[1] <= 1300) { motor_state = 13; MOTOR_SPEED = (byte)0x00D0; }
+                else if(num[1] > 1300 && num[1] <= 1400) { motor_state = 14; MOTOR_SPEED = (byte)0x00E0; }
+                else                                     { motor_state = 15; MOTOR_SPEED = (byte)0x00F0; }*/
+                /////////////////////////////////////////////////////////////// 
+                
+                /////////////////////////DEBUGGGGGGG!!!! STATE//////////////////////////
+                if     (num[1] == 0)                     { magnet_state =  0; MAGNET = (byte)0x0021; }//!
+                else if(num[1] >    0 && num[1] <=  100) { magnet_state =  1; MAGNET = (byte)0x0022; }//"
+                else if(num[1] >  100 && num[1] <=  200) { magnet_state =  2; MAGNET = (byte)0x0023; }//#
+                else if(num[1] >  200 && num[1] <=  300) { magnet_state =  3; MAGNET = (byte)0x0024; }//$
+                else if(num[1] >  300 && num[1] <=  400) { magnet_state =  4; MAGNET = (byte)0x0025; }//%
+                else if(num[1] >  400 && num[1] <=  500) { magnet_state =  5; MAGNET = (byte)0x0026; }//&
+                else if(num[1] >  500 && num[1] <=  600) { magnet_state =  6; MAGNET = (byte)0x0027; }//'
+                else if(num[1] >  600 && num[1] <=  700) { magnet_state =  7; MAGNET = (byte)0x0028; }//(
+                else if(num[1] >  700 && num[1] <=  800) { magnet_state =  8; MAGNET = (byte)0x0029; }//)
+                else if(num[1] >  800 && num[1] <=  900) { magnet_state =  9; MAGNET = (byte)0x002A; }//*
+                else if(num[1] >  900 && num[1] <= 1000) { magnet_state = 10; MAGNET = (byte)0x002B; }//+
+                else if(num[1] > 1000 && num[1] <= 2000) { magnet_state = 11; MAGNET = (byte)0x002C; }//,
+                else if(num[1] > 2000 && num[1] <= 3000) { magnet_state = 12; MAGNET = (byte)0x002D; }//-
+                else if(num[1] > 3000 && num[1] <= 4000) { magnet_state = 13; MAGNET = (byte)0x002E; }//.
+                else if(num[1] > 4000 && num[1] <= 5000) { magnet_state = 14; MAGNET = (byte)0x002F; }///
+                else                                     { magnet_state = 15; MAGNET = (byte)0x0030; }//0
+                /////////////////////////////////////////////////////////////// 
+
+/*                /////////////////////////MAGNET STATE//////////////////////////
+                if     (num[1] == 0)                     { magnet_state =  0; MAGNET = (byte)0x0000; }
+                else if(num[1] >    0 && num[1] <=  100) { magnet_state =  1; MAGNET = (byte)0x0100; }
+                else if(num[1] >  100 && num[1] <=  200) { magnet_state =  2; MAGNET = (byte)0x0000; }
+                else if(num[1] >  200 && num[1] <=  300) { magnet_state =  3; MAGNET = (byte)0x0100; }
+                else if(num[1] >  300 && num[1] <=  400) { magnet_state =  4; MAGNET = (byte)0x0000; }
+                else if(num[1] >  400 && num[1] <=  500) { magnet_state =  5; MAGNET = (byte)0x0100; }
+                else if(num[1] >  500 && num[1] <=  600) { magnet_state =  6; MAGNET = (byte)0x0000; }
+                else if(num[1] >  600 && num[1] <=  700) { magnet_state =  7; MAGNET = (byte)0x0100; }
+                else if(num[1] >  700 && num[1] <=  800) { magnet_state =  8; MAGNET = (byte)0x0000; }
+                else if(num[1] >  800 && num[1] <=  900) { magnet_state =  9; MAGNET = (byte)0x0100; }
+                else if(num[1] >  900 && num[1] <= 1000) { magnet_state = 10; MAGNET = (byte)0x0000; }
+                else if(num[1] > 1000 && num[1] <= 1100) { magnet_state = 11; MAGNET = (byte)0x0100; }
+                else if(num[1] > 1100 && num[1] <= 1200) { magnet_state = 12; MAGNET = (byte)0x0000; }
+                else if(num[1] > 1200 && num[1] <= 1300) { magnet_state = 13; MAGNET = (byte)0x0100; }
+                else if(num[1] > 1300 && num[1] <= 1400) { magnet_state = 14; MAGNET = (byte)0x0000; }
+                else                                     { magnet_state = 15; MAGNET = (byte)0x0100; }
+                /////////////////////////////////////////////////////////////// 
+*/
+/*                CURRENT = (byte)(CURRENT | LED);
+                CURRENT = (byte)(CURRENT | MOTOR_SPEED);
+                CURRENT = (byte)(CURRENT | MOTOR_DURATION);
+                CURRENT = (byte)(CURRENT | MAGNET);*/
+
+//                CURRENT = (byte)(CURRENT | MAGNET);
+                if(prev_mag_st == magnet_state)
+                {
+                    CURRENT = (byte)(CURRENT + 0x0001);
+                }
+                else
+                {
+                    byteString = byteString + (char)CURRENT;
+                    CURRENT = (byte)0x0021;
+                
+                }
+                prev_mag_st = magnet_state;
+                                
+//                byteString = byteString + (char)MAGNET;
+//                MAGNET = (byte)0x0000;
+                ///////////////////////////////////////////////////////////////
+            }
+
+            ///////////DEBUG///////////////////
+            System.out.println(byteString);
+            //System.out.println("Total: " + sum);
+            ///////////////////////////////////
+
+            output.write( byteString );
+            output.close();
+            in_put.close();
+            //System.out.println("ALL GOOD... " + count);
+

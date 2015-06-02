@@ -1,0 +1,187 @@
+
+@import http://fonts.googleapis.com/css?family=Raleway;
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+
+/*html, body { 
+height: 100%; 
+width: 100%; 
+margin: 0 auto;
+background-position: center; 
+position: absolute;
+}*/
+    html {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    body {
+/*        background-color: #76D4D6;*/
+background-color:#FEFFED;
+/*background-color:#165B8C;*/
+
+	margin: 0;
+        min-height: 100%;
+    }
+#main {
+width:100%;
+margin:50px auto;
+font-family:raleway
+}
+span {
+color:red
+}
+h2 {
+background-color:#FEFFED;
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px;
+}
+hr {
+border:0;
+border-bottom:1px solid #ccc;
+margin:10px -40px;
+margin-bottom:30px;
+}
+#login {
+width:300px;
+float:left;
+border-radius:10px;
+font-family:raleway;
+border:2px solid #ccc;
+padding:10px 40px 25px;
+margin-top:70px
+}
+input[type=text],input[type=password] {
+width:99.5%;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:16px;
+font-family:raleway
+}
+input[type=submit] {
+width:100%;
+background-color:#165B8C;
+color:#fff;
+border:2px solid #F0F0F0;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px
+}
+#bton {
+width:100%;
+background-color:#165B8C;
+color:#fff;
+border:2px solid #F0F0F0;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px
+}
+
+#profile {
+height:100%;
+width:100%;
+padding:50px;
+border:1px solid gray; 
+font-size:20px;
+background-position: center; 
+background-color:#D9D9D9;
+
+  /*position: fixed;*/ 
+  top: 0; 
+  left: 0; 
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+#logout {
+float:right;
+padding:5px;
+}
+a {
+text-decoration:none;
+color:#6495ed
+}
+i {
+color:#6495ed
+}
+.scroll {
+    max-height: 300px;
+    overflow: auto;
+}
+td {
+    border: 1px #DDDDDD solid; 
+    padding: 5px; 
+    cursor: pointer;
+}
+.selected {
+    width:100%;
+    height:100%;
+    background-color: #F0F0F0;
+    
+    color: #FFFFFF;
+    text-color: black;
+}
+#highlight {
+    color: black;
+    border: 1px #DDDDDD solid; 
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*li {
+    float: left;
+}*/
+
+a:link, a:visited {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #165B8C;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #00426A;
+}
+
+#bton:hover, #bton:active {
+    background-color: #00426A;
+}
+
+#bt_hvr:hover, #bt_hvr:active {
+    background-color: #00426A;
+}
+
+#nav {
+display: table;
+width: 100%;
+border-collapse: collapse;
+border: none;
+}
+#nav ul {
+display: table-row;
+}
+#nav li {
+display: table-cell;
+margin: 0;
+}

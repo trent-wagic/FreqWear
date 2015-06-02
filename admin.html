@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body onload="is_logged()">
+        <div id='logged'>
+        <p>Welcome to the Admin Page:</p>
+        <ol>
+            <li><a href="http://54.149.136.136/debug.php?action=get_all_users">
+                        SELECT * FROM users; Lists all the users in the database</a></li>
+            <li><a href="http://54.149.136.136/debug.php?action=get_all_files">
+                        SELECT * FROM files; Lists all the files in the database</a></li>
+        </ol>
+
+        <form enctype="multipart/form-data" method="post" action="transfer.php">
+            Send this file: <input name="userfile" type="file" /><br />
+            <input type="submit" value="Send File" />
+        </form>
+        </div>
+
+        <script>
+            function is_logged(){
+                console.log("HERE........");
+            }
+        </script>
+    </body>
+</html>
